@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+    $(document).ready(function(){
+      $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable tr").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+     <img class="nav-img" src="./kakashi.jpg" alt="">
+     <span class="nav-title">
+         Web programming event1
+     </span>
+     <span class="nav-items">
+        <a href="">Home</a>
+        <a href="">about</a>
+        <a href="">stocks</a>
+     </span>
+    </nav>
+    <main>
+        <label for="">Search</label>
+        <input id="myInput" type="text" placeholder="Search..">
+        <br><br>
+
+<table>
+  <thead>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Email</th>
+  </tr>
+  </thead>
+  <tbody id="myTable">
+  <tr>
+    <td>TataMotors</td>
+    <td>Lastname</td>
+    <td><img src="./itachi3.jpg" alt="" style="height: 40px;width: 40px;border-radius: 80%;"></td>
+  </tr>
+  <tr>
+    <td>Mary</td>
+    <td>Moe</td>
+    <td>mary@mail.com</td>
+  </tr>
+  <tr>
+    <td>July</td>
+    <td>Dooley</td>
+    <td>july@greatstuff.com</td>
+  </tr>
+  <tr>
+    <td>Anja</td>
+    <td>Ravendale</td>
+    <td>a_r@test.com</td>
+  </tr>
+  </tbody>
+</table>
+  
+    </main>
+
+    <footer>
+        <span>
+            <a href="">Home</a>
+            <a href="">about</a>
+            <a href="">stocks</a>
+         </span>
+    </footer>
+</body>
+</html>
