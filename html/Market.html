@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+    $(document).ready(function(){
+      $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable tr").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+    </script>
+    <title>Stock Market</title>
+</head>
+<body>
+    <nav>
+      <div class="nav-wrapper #000000 black">
+        <a href="#" class="brand-logo ">Stock Market</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="../html/index.html">Home</a></li>
+          <li><a href="#">Market</a></li>
+          
+        </ul>
+      </div>
+    </nav>
+    <br>
+    <main class="main_market">
+     <form class="example"  style="margin:auto;max-width:300px">
+      <input id="myInput" type="text" placeholder="Search.." name="search2">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+
+   <table class="styled-table">
+    <thead>
+        <tr>
+            
+            <th>Name</th>
+            <th>Subsector</th>
+            <th>Market Cap</th>
+            <th>Close Price</th>
+            <th>Buy Now</th>
+        </tr>
+    </thead>
+    <tbody id="myTable">
+        <tr class="active-row">
+            <td>POONAWALLA</td>
+            <td>Consumer Finance</td>
+            <td>16160.49</td>
+            <td>211.35</td>
+            <td class="buy_now"><a href="./buy.html">BUY NOW</a></td>
+        </tr>
+        <tr class="active-row">
+            <td>SFL</td>
+            <td>Home Furnishing</td>
+            <td>16039.79</td>
+            <td>3288.00</td>
+            <td class="buy_now"><a href="./buy.html">BUY NOW</a></td>
+        </tr>
+        <tr class="active-row">
+            <td>CDSL</td>
+            <td>Stock Exchanges </td>
+            <td>15982.75</td>
+            <td>1529.45</td>
+            <td class="buy_now"><a href="./buy.html">BUY NOW</a></td>
+        </tr>
+        <tr class="active-row">
+            <td>APLLTD</td>
+            <td>Pharmaceuticals</td>
+            <td>15934.39</td>
+            <td>810.65</td>
+            <td class="buy_now"><a href="./buy.html">BUY NOW</a></td>
+        </tr>
+        <tr class="active-row">
+            <td>NATCOPHARM</td>
+            <td>Pharmaceuticals</td>
+            <td>15847.89</td>
+            <td>869.15</td>
+            <td class="buy_now"><a href="./buy.html">BUY NOW</a></td>
+        </tr>
+        <tr class="active-row">
+            <td>BLUEDART</td>
+            <td>Logistics</td>
+            <td>15352.92</td>
+            <td>6470.40</td>
+            <td class="buy_now"><a href="./buy.html">BUY NOW</a></td>
+        </tr>
+        <tr class="active-row">
+            <td>TTKPRESTIG</td>
+            <td>Home Electronics </td>
+            <td>15236.87</td>
+            <td>10992.30</td>
+            <td class="buy_now"><a href="./buy.html">BUY NOW</a></td>
+        </tr>
+        <tr class="active-row">
+            <td>DCMSHRIRAM</td>
+            <td>Diversified Chemic</td>
+            <td>15235.69</td>
+            <td>986.95</td>
+            <td class="buy_now"><a href="./buy.html">BUY NOW</a></td>
+        </tr>
+        <tr class="active-row">
+            <td>WABCOINDIA</td>
+            <td>Auto Parts</td>
+            <td>15119.25</td>
+            <td>7971.10</td>
+            <td class="buy_now"><a href="./buy.html">BUY NOW</a></td>
+        </tr>
+        <tr class="active-row">
+            <td>MANAPPURAM</td>
+            <td>Auto Parts</td>
+            <td>15119.25</td>
+            <td>7971.10</td>
+            <td class="buy_now"><a href="./buy.html">BUY NOW</a></td>
+        </tr>
+        <tr class="active-row">
+            <td>GLENMARK</td>
+            <td>Pharmaceuticals</td>
+            <td>14836.40</td>
+            <td>525.80</td>
+            <td class="buy_now"><a href="./buy.html">BUY NOW</a></td>
+        </tr>
+        <tr class="active-row">
+            <td>TIMKEN</td>
+            <td>Industrial Machine</td>
+            <td>14762.05</td>
+            <td>1962.55</td>
+            <td class="buy_now"><a href="./buy.html">BUY NOW</a></td>
+        </tr>
+        <tr class="active-row">
+            <td>RADICO</td>
+            <td>Alcoholic Beverag</td>
+            <td>14726.17</td>
+            <td>1101.65</td>
+            <td class="buy_now"><a href="./buy.html">BUY NOW</a></td>
+        </tr>
+        <tr class="active-row">
+            <td>UTISENSETF</td>
+            <td>Equity</td>
+            <td>14664.84</td>
+            <td>618.50</td>
+            <td class="buy_now"><a href="./buy.html">BUY NOW</a></td>
+        </tr>
+        <tr class="active-row">
+            <td>AFFLE</td>
+            <td>Advertising</td>
+            <td>14443.75</td>
+            <td>1083.95</td>
+            <td class="buy_now"><a href="./buy.html">BUY NOW</a></td>
+        </tr>
+        
+    </tbody>
+</table>
+</main>
+
+    <footer>
+        <span>
+            <a href="../html/index.html">Home</a>
+            <a href="#">Market</a>
+            <a class="copyright" href="">&copy; Copyright 2021 HTML.am</a>
+         </span>
+    </footer>
+</body>
+</html>
